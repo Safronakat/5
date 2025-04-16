@@ -1,0 +1,20 @@
+fastapi
+uvicorn[standard]
+
+# Google Cloud SDKs
+google-cloud-storage
+google-cloud-secret-manager
+google-cloud-pubsub
+google-cloud-firestore  # если используешь Firestore
+
+# CORS для связи с React
+fastapi[all]  # включает fastapi + pydantic + starlette + CORS middleware
+
+# Безопасность
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+
+# Работа с .env
+python-dotenv
+
